@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:onClick="masInfo"
+                android:scaleType="center"
+                app:srcCompat="@mipmap/tulum" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_alignTop="@+id/imageButton3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="29dp"
+                android:onClick="masInfo"
+                android:scaleType="center"
+                app:srcCompat="@mipmap/cozumel" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/imageButton3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:onClick="masInfo"
+                android:scaleType="center"
+                app:srcCompat="@mipmap/playa" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/imageButton4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="33dp"
+                android:onClick="masInfo"
+                android:scaleType="center"
+                app:srcCompat="@mipmap/cancun" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="33dp"
+                android:text="Consulta"
+                android:textColor="@color/colorNegro"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="0dp"
+                android:text="Estado del sargazo" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
